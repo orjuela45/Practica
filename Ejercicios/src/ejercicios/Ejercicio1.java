@@ -5,10 +5,11 @@ public class Ejercicio1
 {
     public static int tope;
     public static int multiplos[] = new int[1000];
-    public void Porblema1()
+    public void Problema1()
     {
         Scanner teclado = new Scanner(System.in);
         int suma=0;
+        int repetir=0;
         Ejercicio1 op= new Ejercicio1();
         System.out.println("-----------------------------------------------------------------------------------------");
         System.out.println("Si enumeramos todos los números naturales por debajo de 10 que son múltiplos de 3 o 5, obtenemos 3, 5, 6 y 9. La suma de estos múltiplos es 23.\n" 
@@ -37,6 +38,15 @@ public class Ejercicio1
         }
         suma = op.suma();
         System.out.println("\nY la suma total de estos numeros seria: " + suma);
+        do {            
+            System.out.println("Desea Volver realizar el ejercicio?(1 si o 2 no)");
+            repetir = teclado.nextInt();
+            switch(repetir)
+            {
+                case 1: Problema1();break;
+                default: System.out.println("Opcion no disponible");
+            }
+        } while (repetir!=2);
     }
     public void numeros()
     {
