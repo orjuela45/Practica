@@ -1,17 +1,16 @@
 package ejercicios;
-
 import java.util.Scanner;
-import sun.security.util.Length;
 
-public class Ej1 
+public class Ejercicio1 
 {
     public static int tope;
     public static int multiplos[] = new int[1000];
-    public static void main(String[] args) 
+    public void Porblema1()
     {
         Scanner teclado = new Scanner(System.in);
         int suma=0;
-        Ej1 op= new Ej1();
+        Ejercicio1 op= new Ejercicio1();
+        System.out.println("-----------------------------------------------------------------------------------------");
         System.out.println("Si enumeramos todos los números naturales por debajo de 10 que son múltiplos de 3 o 5, obtenemos 3, 5, 6 y 9. La suma de estos múltiplos es 23.\n" 
             + "Encuentra la suma de todos los múltiplos de 3 o 5 debajo de 1000.");
         System.out.print("Altere el ejercicio para que el usuario pueda asignar hasta que numero tope llegar. Por facor digite el tope: ");
